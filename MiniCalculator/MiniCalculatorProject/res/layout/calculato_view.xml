@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/boxA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numeric="integer"
+        android:hint="A"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/boxB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numeric="integer"
+        android:hint="B"
+        android:ems="10" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+         <Button
+        android:id="@+id/subBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" A-B" />
+
+    <Button
+        android:id="@+id/addBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" A+B" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+         <Button
+        android:id="@+id/mulBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A*B" />
+
+    <Button
+        android:id="@+id/divBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A/B" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result" />
+
+</LinearLayout>
